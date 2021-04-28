@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+
+<html>
+<head> 
+<link rel="stylesheet" type="text/css" href="stylesheethomepage.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <meta name="viewport" content="width=device-width, initial-scale=1">  
+</head>
+<body>
+ 
+<div class="topnav" id="myTopnav">
+  <a href="#home" class="active">HOME</a>
+  <div class="dropdown">
+    <button class="dropbtn">LOCATION 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Puri</a>
+      <a href="#">Bhubaneswar</a>
+      <a href="#">Cuttack</a>
+      <a href="#">Rourkela</a>
+      <a href="#">Sambalpur</a>
+      <a href="#">Berhampur</a>
+      <a href="konark.html">Konark</a>
+      <a href="baripada.html">Baripada</a>
+      <a href="gopalpur.html">Gopalpur</a>
+      <a href="sundargarh.html">Sundargarh</a>
+    </div>
+  </div> 
+  <a href="#about">LOGIN</a>
+  
+  
+</div>
+<div class="orrisa">ORRISA</div>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  
+  <img src="puribeach.jpg" height="430px" width="980px">
+  <div class="text">Puri Beach,Puri</div>
+</div>
+
+<div class="mySlides fade">
+  
+  <img src="udaygiri.jpg" height="430px" width="980px">
+  <div class="text">Udaygiri and khandagiri caves,Bhubaneswar</div>
+</div>
+
+<div class="mySlides fade">
+  
+  <img src="konarktemple1.jpg" height="430px" width="980px">
+  <div class="text">Konark Temple,Konark</div>
+</div>
+
+<div class="mySlides fade">
+  
+  <img src="khandadhar.jpg" height="430px" width="980px">
+  <div class="text">Khandadhar,Sundargarh</div>
+</div>
+
+<div class="mySlides fade">
+  
+  <img src="purijagannath.jpg" height="430px" width="980px">
+  <div class="text">Jagannath Temple,Puri</div>
+</div>
+
+<div class="mySlides fade">
+  
+  <img src="puribeachfestival.jpeg" height="430px" width="980px">
+  <div class="text">Golden Beach,Puri</div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(0)"></span> 
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(4)"></span> 
+  <span class="dot" onclick="currentSlide(5)"></span> 
+</div>
+<br>
+<br>
+
+  <div class="bottom">
+    <div class="coloumn">
+     <img class="roundimg" src="puri.jpg">
+    </div>
+    <div class="coloumn1">
+    <h3><a href="">Puri</a></h3>Hotels,villas,resorts near golden Beach
+    </div>
+     <div class="coloumn">
+     <img class="roundimg" src="bhub.jpg">
+    </div>
+    <div class="coloumn1">
+   <h3><a href="">Bhubaneswar</a></h3>Hotels,villas,resorts near railway station
+    </div>
+     <div class="coloumn">
+     <img class="roundimg" src="gopalpur.jpg">
+    </div>
+    <div class="coloumn1">
+   <h3><a href="gopalpur.html">Gopalpur</a></h3>Hotels,villas,resorts near gopalpur beach                     
+    </div>
+   
+   
+    <div class="coloumn">
+     <img class="roundimg" src="berhampur.jpg">
+    </div>
+    <div class="coloumn1">
+   <h3><a href="">Berhampur</a></h3>Hotels,villas,resorts near railway station               
+    </div>
+     <div class="coloumn">
+     <img class="roundimg" src="sambalpur.jpg">
+    </div>
+    <div class="coloumn1">
+   <h3><a href="">Sambalpur</a></h3>Hotels,villas,resorts near railway station
+    </div>
+     <div class="coloumn">
+     <img class="roundimg" src="konarkk.webp">
+    </div>
+    <div class="coloumn1">
+   <h3><a href="konark.html">Konark</a></h3>Hotels,villas,resorts near konark sun temple
+    </div>
+   
+    <div class="coloumn">
+     <img class="roundimg" src="cuttack.jpg">
+    </div>
+    <div class="coloumn1">
+   <h3><a href="">Cuttack</a></h3>Hotels,villas,resorts near railway station
+    </div>
+     <div class="coloumn">
+     <img class="roundimg" src="sundergarh.jpg">
+    </div>
+    <div class="coloumn1">
+    <h3><a href="sundergarh.html">Sundargarh</a></h3>Hotels,villas,resorts near railway station
+    </div>
+     <div class="coloumn">
+     <img class="roundimg" src="baripada.jpg">
+    </div>
+    <div class="coloumn1">
+   <h3><a href="baripada.html">Baripada</a></h3>Hotels,villas,resorts near Sitakund waterfalls
+    </div>
+  </div> 
+    
+ 
+     
+
+<script>
+
+var slideIndex = 0;
+showSlides();
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 6000); 
+}
+
+
+</script>
+
+</body>
+</html>
